@@ -1,0 +1,11 @@
+Q = eye(4)
+lypa_A1 = lyap(A1,Q);
+d_lypa_A1 = eig(lypa_A1);
+isposdef_A1 = all(d_lypa_A1 > 0)
+
+lypa_A2 = lyap(A2,Q);
+d_lypa_A2 = eig(lypa_A2);
+isposdef_A2 = all(d_lypa_A1 > 0)
+
+eig_A1 = eig(A1)
+eig_A2 = eig(A2)
